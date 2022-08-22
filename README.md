@@ -10,7 +10,7 @@
 
 2) P vs NP Problem (Studied mostly from default given tutorial) 
 3) Monkey Problem (Solved in monkey.py within dsa folder) 
-4) Data Structures (Problem solves included in namewise folders): 
+4) Data Structures (Problem solves included in namewise folders): \
                   -- Linked Lists:                              https://www.youtube.com/watch?v=B31LgI4Y4DQ \
                   -- Stacks:                                    https://www.geeksforgeeks.org/stack-data-structure/ \
                   -- Queues:                                    https://www.youtube.com/watch?v=PgjpQ3Ew9sw \
