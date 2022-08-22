@@ -15,4 +15,5 @@
                   -- Stacks:       https://www.geeksforgeeks.org/stack-data-structure/ \
                   -- Queues:       https://www.youtube.com/watch?v=PgjpQ3Ew9sw \
                   -- Sliding Range Minimum/Maximum Query (DEQ): https://www.youtube.com/watch?v=OnlgK0gjtB8 \
+                  -- Disjoint Sets: 
               
