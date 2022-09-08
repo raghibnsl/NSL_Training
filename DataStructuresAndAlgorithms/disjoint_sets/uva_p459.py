@@ -1,6 +1,4 @@
-par=[i for i in range(5)]
-counter=[1 for i in range(5)]
-a,b,c,d,e=0,1,2,3,4
+par=[0, 0, 2, 0, 2]      #parents A for ABD and C for CE
 
 def find(u):                                                                    #basic disjoint format
     """
@@ -14,26 +12,21 @@ def find(u):                                                                    
     par[u]=find(par[u])
     return par[u]
 
-def connect(u,v):                                                             #basic disjoint format                     
-    """
-    Helps connect multiple nodes to a certain subset.
+# def connect(u,v):                                                             #basic disjoint format                     
+#     """
+#     Helps connect multiple nodes to a certain subset.
 
-    Parameters:
-        u,v <int>: The arguments are nodes that must be connected to the same subset
-    """
-    u=find(u)
-    v=find(v)
-    if u==v:
-        print("already chuddy buddies")
-    else:
-        par[max(u,v)]=min(u,v)
-    
-connect(a,b)                                                   #connecting nodes                                     
-connect(b,d)
-connect(c,e)
+#     Parameters:
+#         u,v <int>: The arguments are nodes that must be connected to the same subset
+#     """
+#     u=find(u)
+#     v=find(v)
+#     if u==v:
+#         print("already chuddy buddies")
+#     else:
+#         par[max(u,v)]=min(u,v)
 
-
-def count_sub(args,**kwargs):                                   #Problem specific function
+def count_sub(args,principle_case):                                   #Problem specific function
     """
     Counts the correct maximal substrings from our inputs
     Parameters:
@@ -53,8 +46,6 @@ def count_sub(args,**kwargs):                                   #Problem specifi
 
 
 if __name__=="__main__":
-    print(par)
-    print(counter)
     cases=int(input())
     _=input()
     for i in range(cases):

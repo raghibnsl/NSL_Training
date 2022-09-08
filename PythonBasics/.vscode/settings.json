@@ -1,0 +1,6 @@
+{
+    "python.pythonPath":"/home/nsl53/anaconda3/envs/eda_/python.exe",
+    "python.terminal.activateEnvironment":true,
+    "terminal.integrated.shell.linux": {"bash": {"path": "/bin/bash"}},
+
+}

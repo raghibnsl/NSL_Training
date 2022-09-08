@@ -6,7 +6,7 @@ from collections import deque
 class deque:
     def __init__(self):
         self.result=[]
-        self.dq=deque([])
+        self.dq=[]
 
     def min_query(self,arr:list ,i:int):                
         
@@ -40,25 +40,25 @@ class deque:
 
     def process(self,arr:list,max_min:str,range_:int)->list:
         for i in range(len(arr)):
-            if not self.dq:
+            if len(self.dq)==0:
                 self.dq.append(i)
             range_diff=i-range_
-            while True:
-                if dq[0]<range_diff:
-                    self.dq.popleft()
+            while self.dq:
+                if self.dq[0]<range_diff:
+                    self.dq.pop(0)
                 else:
                     break
             if max_min=="min":
                 self.min_query(arr=arr,i=i)
             else:
                 self.max_query(arr=arr,i=i)
-            self.result.append(arr[dq[0]])
+            self.result.append(arr[self.dq[0]])
         return 
                     
 
-if __name__="__main__":
+if __name__=="__main__":
     deq=deque()
     arr=[10,20,5,6,2,30,21]
-    deq.process(arr=arr,max_min='max',3)
+    deq.process(arr=arr,max_min='max',range_=3)
 
 
