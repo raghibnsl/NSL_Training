@@ -16,19 +16,19 @@
                   -- Queues:                                    https://www.youtube.com/watch?v=PgjpQ3Ew9sw \
                   -- Sliding Range Minimum/Maximum Query (DEQ): https://www.youtube.com/watch?v=OnlgK0gjtB8 \
                   -- Disjoint Sets:                             https://www.geeksforgeeks.org/disjoint-set-data-structures/ \
-                  -- Trees (BST):                               https://www.youtube.com/watch?v=B31LgI4Y4DQ&t=25174s \           
+                  -- Trees (BST):                               https://www.youtube.com/watch?v=B31LgI4Y4DQ&t=25174s          
 5) Algorithms: \
                   -- DFS:                                       https://www.youtube.com/watch?v=B31LgI4Y4DQ&t=25174s \
-                  -- Binary Search:                             Studied from default text \
+                  -- Binary Search:                             Studied from default text 
 6) Dynamic Programming: \
                   -- Fibonacci:                                 https://www.youtube.com/watch?v=mmjDZGSr7EA&list=PLqM7alHXFySGbXhWx7sBJEwY2DnhDjmxm \
                   -- Memoization:                               https://www.youtube.com/watch?v=mmjDZGSr7EA&list=PLqM7alHXFySGbXhWx7sBJEwY2DnhDjmxm \
-                  -- Tabulation:                                https://www.youtube.com/watch?v=mmjDZGSr7EA&list=PLqM7alHXFySGbXhWx7sBJEwY2DnhDjmxm \ 
+                  -- Tabulation:                                https://www.youtube.com/watch?v=mmjDZGSr7EA&list=PLqM7alHXFySGbXhWx7sBJEwY2DnhDjmxm 
                   
 ### Python Basics: 
 
-1) Aargs and kwargs (Studied from default text) \
-2) Decorators (Studied from default text) \
-3) OOP constructors (Studied from default text) \
-4) Functional Programming (Studied from default text) \
+1) Aargs and kwargs (Studied from default text) 
+2) Decorators (Studied from default text) 
+3) OOP constructors (Studied from default text) 
+4) Functional Programming (Studied from default text) 
                   
