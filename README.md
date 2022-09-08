@@ -31,8 +31,4 @@
 2) Decorators (Studied from default text) 
 3) OOP constructors (Studied from default text) 
 4) Functional Programming (Studied from default text) 
-                  
-<<<<<<< HEAD
-
-=======
->>>>>>> d9eff3cffb1aecc72f5695b12528fc39ce89fb0c
+               
