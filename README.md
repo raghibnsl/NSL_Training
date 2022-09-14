@@ -31,9 +31,13 @@
 2) Decorators (Studied from default text) 
 3) OOP constructors (Studied from default text) 
 4) Functional Programming (Studied from default text) 
+<<<<<<< HEAD
                   
                   
 ### ML Basics:
 1) Data Preprocessing
 2) (Polynomial) Linear Regression  
                   
+=======
+               
+>>>>>>> 94fbf558bff7a1be531a0bd2ab38bf331b37d56f
