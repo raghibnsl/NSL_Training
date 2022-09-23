@@ -1,27 +1,19 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %}
 
 {% block content %}
-<style>
-    .container {
-        display:block;
-        top:0%;
-        color:aliceblue;
-        position: absolute;
-        top: 30%;
-        right: 0%;
-        left: 0%;
-        height: 300px;
-        padding:10px;
-        
-    }
-    .vertical-center {
-        text-align:center;
-        color:aliceblue;
-        vertical-align: middle;
-        font-size:500%
+<h1 align="center"><em><strong>Welcome home, {{current_user.id}}</strong></em><h1> 
+<h3 align="center"><em><strong>You may add your notes below</strong></em></h3>
 
-    }
-</style> 
-<div class="container">
-    <h1 class="vertical-center"><em><strong>Home</strong></em><h1>  
-</div>{% endblock %}
+<ul class="list_group list-group-flush" id="notes">
+    {% for note in user.notes %}
+    <li class="list-group-item">{{ note.data }}</li>
+    {% endfor %}
+</ul>
+<form method="POST">
+    <textarea name="note" id='note' class="form-control"></textarea>
+    <br />
+    <div align="center">
+        <button type="submit" class="btn btn-primary"> Add Note</button>
+    </div>
+</form>
+{% endblock %}
