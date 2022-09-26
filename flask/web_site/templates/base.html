@@ -2,6 +2,7 @@
 <html lang="en">
 
     <head>
+        <!-- Bootstrap Plugins added to base template -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link
@@ -17,7 +18,9 @@
         />
         <title>{% block title %}Home{% endblock %}</title>
     </head>
-    <body style="background-image:url('../static/bg.jpg');background-repeat:no-repeat;background-size:2050px 1100px;">
+    <!-- Background Image added from static to base template-->
+    <body style="background-image:url('../static/bg.jpg');background-repeat:no-repeat;background-size:2050px 1100px;"> 
+        <!-- Bootstrap navbar class integrated -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <button 
             class="navbar-toggler" 
@@ -28,6 +31,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <div class="navbar-nav">
+                    <!-- Changing navbar options according to user login status -->
                     {% if current_user.is_authenticated %}
                     <a class="nav-item nav-link" id="home" href="/">Home</a>
                     <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
@@ -38,6 +42,7 @@
                 </div>
             </div>
         </nav>
+        <!-- display all flashed messages  -->
         {% with messages= get_flashed_messages(with_categories=true) %}
         {% if messages %}
             {% for category,message in messages %}
@@ -64,7 +69,7 @@
         {% endblock %}    
         </div>
 
-
+        <!-- Javascript plugins and cdn required for Bootstrap plugins -->
         <script
         src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -77,7 +82,7 @@
         src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
+        <!-- Javascript plugin for user note deletion at static/index.js -->
         <script
         type="text/javascript"
         src="{{ url_for('static', filename='index.js') }}"></script>
